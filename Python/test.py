@@ -22,26 +22,19 @@ filtered_signal = apply_bandstop_filter(raw_signal, sampling_rate=500, notch_fre
 # Optionally, you can run the FFT analysis on the filtered signal
 fft_analysis(filtered_signal, sampling_rate=500, samples_to_plot=samples)
 
-#hello
- 
 
 
+Plot the raw ECG signal
+plt.figure(figsize=(10, 4))
+plt.plot(raw_signal[:1100], label='Raw ECG Signal', color='blue')
+plt.title('Raw ECG Signal (Zoomed)')
+plt.xlabel('Time (samples)')
+plt.ylabel('ECG (mV)')
+plt.legend()
+plt.grid()
+plt.show()
 
-
-
-
-
-# Plot the raw ECG signal
-# plt.figure(figsize=(10, 4))
-# plt.plot(raw_signal[:1100], label='Raw ECG Signal', color='blue')
-# plt.title('Raw ECG Signal (Zoomed)')
-# plt.xlabel('Time (samples)')
-# plt.ylabel('ECG (mV)')
-# plt.legend()
-# plt.grid()
-# plt.show()
-
-# Now, call the function from detect_r_peaks.py to detect R-peaks
+Now, call the function from detect_r_peaks.py to detect R-peaks
 
 
 
