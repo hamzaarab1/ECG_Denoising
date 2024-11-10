@@ -22,7 +22,7 @@ filtered_signal = apply_bandstop_filter(raw_signal, sampling_rate=500, notch_fre
 # Optionally, you can run the FFT analysis on the filtered signal
 fft_analysis(filtered_signal, sampling_rate=500, samples_to_plot=samples)
 
-
+#hello
  
 
 
